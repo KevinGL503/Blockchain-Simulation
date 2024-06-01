@@ -8,9 +8,10 @@
 #include <tuple>
 using namespace std; 
 
-int main() { 
+int main(int argc, char *argv[]) { 
     /****** Set srand, number of customers & miners, and tics ******/
-    srand(56); 
+    cout << argv[2] << endl;
+    srand(atoi(argv[2])); 
     int NUMCUSTOMERS = 5;
     int NUMMINERS = 1;
     int NUMTICS = 0; 

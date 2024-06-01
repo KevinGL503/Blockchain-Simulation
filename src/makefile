@@ -1,6 +1,6 @@
 #makefile
 output: Driver.o Miner.o EventsQueue.o Blockchain.o
-	g++ Driver.o Miner.o EventsQueue.o Blockchain.o sha256.o -o output
+	g++ Driver.o Miner.o EventsQueue.o Blockchain.o sha256.o -o ../output
 Driver.o: Driver.cpp
 	g++ -c Driver.cpp
 Miner.o: Miner.cpp
